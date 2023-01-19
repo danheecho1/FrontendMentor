@@ -114,6 +114,7 @@ button:hover {
 
 .card-back {
 	text-align: center;
+	display: none;
 }
 
 .card-back img {
