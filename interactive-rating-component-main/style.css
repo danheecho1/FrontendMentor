@@ -22,6 +22,7 @@ desktop width: 1440px;
 	font-family: 'Overpass', sans-serif;
 	font-size: 15px;
 	font-weight: var(--fw-regular);
+	line-height: 1.75rem;
 }
 
 body {
@@ -33,7 +34,8 @@ body {
 	background-color: var(--clr-very-dark-blue);
 }
 
-.card-front {
+.card-front, 
+.card-back {
 	background-color: var(--clr-dark-blue);
 	width: 350px;
 	padding: 1.5em;
@@ -59,7 +61,6 @@ body {
 
 .card-front p {
 	color: var(--clr-medium-gray);
-	line-height: 1.75rem;
 	margin-bottom: 1.25em;
 }
 
@@ -109,6 +110,33 @@ button {
 button:hover {
 	background-color: var(--clr-white);
 	color: var(--clr-orange);
+}
+
+.card-back {
+	text-align: center;
+}
+
+.card-back img {
+	margin: 0.75em;
+}
+
+.score-declaration {
+	color: var(--clr-orange);
+	background-color: var(--clr-dark-gray);
+	border-radius: 1.5em;
+	padding: 0.375em;
+	margin: 0 3.875em 2em;
+}
+
+.card-back h4 {
+	color: var(--clr-white);
+	font-size: 1.5rem;
+	margin-bottom: 0.5em;
+}
+
+p:last-child {
+	color: var(--clr-medium-gray);
+	margin-bottom: 1em;
 }
 
 .attribution {
