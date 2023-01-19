@@ -11,33 +11,31 @@
 		<title>Frontend Mentor | Interactive rating component</title>
 	</head>
 	<body>
-        <main>
-            <!-- Rating -->
-            <div class="card-front">
-                <div class="star-div">
-                    <img src="./images/icon-star.svg" alt="">
+        <!-- Rating -->
+        <div class="card-front">
+            <div class="star-div">
+                <img src="./images/icon-star.svg" alt="">
+            </div>
+            <h4>How did we do?</h4>
+            <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+            <form action="#">
+                <div class="rate-options-div">
+                    <input type="radio" name="rating" value="1" id="rating1"><label for="rating1">1</label>
+                    <input type="radio" name="rating" value="2" id="rating2"><label for="rating2">2</label>
+                    <input type="radio" name="rating" value="3" id="rating3"><label for="rating3">3</label>
+                    <input type="radio" name="rating" value="4" id="rating4"><label for="rating4">4</label>
+                    <input type="radio" name="rating" value="5" id="rating5"><label for="rating5">5</label>
                 </div>
-                <h4>How did we do?</h4>
-                <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-                <form action="#">
-                    <div class="rate-options-div">
-                        <input type="radio" name="rating" value="1" id="rating1"><label for="rating1">1</label>
-                        <input type="radio" name="rating" value="2" id="rating2"><label for="rating2">2</label>
-                        <input type="radio" name="rating" value="3" id="rating3"><label for="rating3">3</label>
-                        <input type="radio" name="rating" value="4" id="rating4"><label for="rating4">4</label>
-                        <input type="radio" name="rating" value="5" id="rating5"><label for="rating5">5</label>
-                    </div>
-                    <button>SUBMIT</button>
-                </form>
-            </div>
-            <!-- Thank you -->
-            <div class="card-back">
-                <img src="./images/illustration-thank-you.svg" alt="">
-                <p>You selected 4 out of 5</p>
-                <h4>Thank you!</h4>
-                <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
-            </div>
-        </main>
+                <button>SUBMIT</button>
+            </form>
+        </div>
+        <!-- Thank you -->
+        <!-- <div class="card-back">
+            <img src="./images/illustration-thank-you.svg" alt="">
+            <p class="score-declaration">You selected 4 out of 5</p>
+            <h4>Thank you!</h4>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+        </div> -->
         <!-- Frontend Mentor Attribution -->
 		<div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Danny Cho</a>.

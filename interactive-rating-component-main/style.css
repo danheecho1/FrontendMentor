@@ -30,4 +30,89 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	background-color: var(--clr-very-dark-blue);
+}
+
+.card-front {
+	background-color: var(--clr-dark-blue);
+	width: 350px;
+	padding: 1.5em;
+	border-radius: 15px;
+}
+
+.star-div {
+	background-color: var(--clr-dark-gray);
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.25em;
+}
+
+.card-front h4 {
+	color: var(--clr-white);
+	font-size: 2rem;
+	margin-bottom: 0.5em;
+}
+
+.card-front p {
+	color: var(--clr-medium-gray);
+	line-height: 1.75rem;
+	margin-bottom: 1.25em;
+}
+
+.rate-options-div {
+	display: flex;
+	justify-content: space-between;
+	height: 45px;
+	margin-bottom: 1.5em;
+}
+
+input {
+	display: none;
+}
+
+label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--clr-medium-gray);
+	width: 45px;
+	background-color: var(--clr-dark-gray);
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+label:hover {
+	background-color: var(--clr-light-gray);
+	color: var(--clr-white);
+}
+
+input:checked + label {
+	background-color: var(--clr-orange);
+	color: var(--clr-white);
+}
+
+button {
+	width: 100%;
+	background-color: var(--clr-orange);
+	color: var(--clr-white);
+	height: 3em;
+	border: none;
+	border-radius: 25px;
+	letter-spacing: 0.2em;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: var(--clr-white);
+	color: var(--clr-orange);
+}
+
+.attribution {
+	color: var(--clr-white);
+	position: fixed;
+	bottom: 0px;
 }
