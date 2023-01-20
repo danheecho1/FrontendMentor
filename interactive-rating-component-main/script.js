@@ -4,7 +4,7 @@ function submitRating() {
 	let front = document.querySelector(".card-front");
 	let back = document.querySelector(".card-back");
 
-	scoreDeclaration.innerText = `You selected ${submittedScore} out of 5.`;
+	scoreDeclaration.innerText = `You selected ${submittedScore} out of 5`;
 	front.style.display = "none";
 	back.style.display = "block";
 }
