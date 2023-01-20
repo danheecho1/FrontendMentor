@@ -23,6 +23,8 @@ desktop width: 1440px;
 	font-size: 15px;
 	font-weight: var(--fw-regular);
 	line-height: 1.75rem;
+	user-select: none;
+	-webkit-user-drag: none;
 }
 
 body {
@@ -42,6 +44,14 @@ body {
 	border-radius: 15px;
 }
 
+@media screen and (min-width: 376px) {
+	.card-front, 
+	.card-back {
+		width: 418px;
+		padding: 2em;
+	}
+}
+
 .star-div {
 	background-color: var(--clr-dark-gray);
 	height: 45px;
@@ -51,6 +61,12 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 1.25em;
+}
+
+@media screen and (min-width: 376px) {
+	.star-div {
+		margin-bottom: 2em;
+	}
 }
 
 .card-front h4 {
@@ -69,6 +85,12 @@ body {
 	justify-content: space-between;
 	height: 45px;
 	margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 376px) {
+	.rate-options-div {
+		margin-bottom: 1.75em;
+	}
 }
 
 input {
