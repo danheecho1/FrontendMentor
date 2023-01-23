@@ -34,16 +34,49 @@ main {
 	margin: 2rem auto;
 }
 
+@media screen and (min-width: 376px) {
+	main {
+		display: flex;
+		width: 600px;
+	}
+}
+
 .product-img {
 	width: 100%;
 	border-radius: 8px 8px 0 0;
 	vertical-align: bottom;
 }
 
+.desktop {
+	display: none;
+}
+
+@media screen and (min-width: 376px) {
+	.desktop {
+		display: block;
+		border-radius: 8px 0 0 8px;
+		width: 300px;
+	}
+
+	.mobile {
+		display: none;
+	}
+}
+
 section {
 	background-color: var(--clr-white);
 	padding: 1.75em;
 	border-radius: 0 0 8px 8px;
+}
+
+@media screen and (min-width: 376px) {
+	section {
+		padding: 2.25em;
+		border-radius: 0 8px 8px 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 }
 
 .category {
@@ -59,10 +92,22 @@ section {
 	margin: 0.5em 0;
 }
 
+@media screen and (min-width: 376px) {
+	.product-name {
+		margin: 0;
+	}
+}
+
 .product-description {
 	color: var(--clr-dark-grayish-blue);
-	line-height: 1.5em;
+	line-height: 1.75em;
 	margin-bottom: 1.5em;
+}
+
+@media screen and (min-width: 376px) {
+	.product-description {
+		margin-bottom: 0;
+	}
 }
 
 article {
@@ -70,6 +115,12 @@ article {
 	gap: 1.5em;
 	align-items: center;
 	margin-bottom: 1em;
+}
+
+@media screen and (min-width: 376px) {
+	article {
+		margin-bottom: 0;
+	}
 }
 
 .discounted-price {
