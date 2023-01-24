@@ -20,9 +20,8 @@
 body {
 	background-color: var(--clr-gray);
 	height: 100vh;
-	display: flex;
 	text-align: center;
-	flex-direction: column;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -31,7 +30,6 @@ main {
 	width: 320px;
 	background-color: var(--clr-white);
 	padding: 1em;
-	margin: auto;
 	border-radius: 12px;
 	display: flex;
 	flex-direction: column;
@@ -56,5 +54,4 @@ main {
 footer {
 	position: fixed;
 	bottom: 0;
-	align-self: center;
 }
