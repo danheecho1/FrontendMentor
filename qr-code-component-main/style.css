@@ -1,0 +1,19 @@
+:root {
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-gray: hsl(212, 45%, 89%);
+	--clr-blue: hsl(220, 15%, 55%);
+	--clr-dark-blue: hsl(218, 44%, 22%);
+	--fw-regular: 400;
+	--fw-bold: 700;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+	-webkit-user-drag: none;
+	font-family: 'Outfit', sans-serif;
+	font-size: 15px;
+}
+
