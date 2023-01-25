@@ -1,0 +1,21 @@
+:root {
+	--clr-blue: hsl(215, 51%, 70%); /* p tag font color */
+	--clr-cyan: hsl(178, 100%, 50%); /* price font color */
+	--clr-dark-blue: hsl(216, 50%, 16%); /* card background color */
+	--clr-very-dark-blue: hsl(217, 54%, 11%); /* background color */
+	--clr-medium-dark-blue: hsl(215, 32%, 27%); /* horizontal line */
+	--clr-white: hsl(0, 0%, 100%);
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-semibold: 600;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: 'Outfit', sans-serif;
+	user-select: none;
+	-webkit-user-drag: none;
+}

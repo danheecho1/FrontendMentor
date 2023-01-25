@@ -29,6 +29,7 @@ desktop width: 1440px;
 
 body {
 	height: 100vh;
+	min-height: 500px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
