@@ -43,16 +43,24 @@ main {
 }
 
 figcaption {
+	margin: 0.75em 0;
+}
+
+figcaption a {
 	color: var(--clr-white);
 	font-weight: var(--fw-semibold);
 	font-size: 1.375rem;
-	margin: 0.75em 0;
+	text-decoration: none;
+}
+
+figcaption a:hover {
+	color: var(--clr-cyan);
 }
 
 .description {
 	color: var(--clr-blue);
 	font-weight: var(--fw-light);
-	line-height: 1.5em;
+	line-height: 1.75em;
 }
 
 .details-div {
@@ -101,6 +109,10 @@ hr {
 .credit a {
 	text-decoration: none;
 	color: var(--clr-white);
+}
+
+.credit a:hover {
+	color: var(--clr-cyan);
 }
 
 .attribution, 
