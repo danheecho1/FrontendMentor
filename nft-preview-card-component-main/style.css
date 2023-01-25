@@ -14,8 +14,98 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Outfit', sans-serif;
 	user-select: none;
 	-webkit-user-drag: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--clr-very-dark-blue);
+	min-height: 100vh;
+	gap: 1em;
+}
+
+main {
+	background-color: var(--clr-dark-blue);
+	width: 327px;
+	padding: 1.375em;
+	border-radius: 14px;
+}
+
+.main-card-img {
+	width: 100%;
+	border-radius: 7px;
+}
+
+figcaption {
+	color: var(--clr-white);
+	font-weight: var(--fw-semibold);
+	font-size: 1.375rem;
+	margin: 0.75em 0;
+}
+
+.description {
+	color: var(--clr-blue);
+	font-weight: var(--fw-light);
+	line-height: 1.5em;
+}
+
+.details-div {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.25em;
+}
+
+.price {
+	color: var(--clr-cyan);
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+.expiration {
+	color: var(--clr-blue);
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+hr {
+	border: 1px solid var(--clr-medium-dark-blue);
+	margin: 1em 0;
+}
+
+.credit {
+	display: flex;
+	align-items: center;
+	gap: 2.25em;
+	font-weight: var(--fw-light);
+	font-size: 0.5rem;
+}
+
+.creator-img {
+	width: 2rem;
+	border: 1px solid var(--clr-white);
+	border-radius: 50%;
+}
+
+.credit p {
+	color: var(--clr-blue);
+}
+
+.credit a {
+	text-decoration: none;
+	color: var(--clr-white);
+}
+
+.attribution, 
+.attribution a {
+	color: var(--clr-white);
+	font-size: 0.75rem;
+	font-weight: var(--fw-light);
 }
