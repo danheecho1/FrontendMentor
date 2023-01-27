@@ -23,6 +23,7 @@
 }
 
 body {
+	width: 100vw;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -30,7 +31,24 @@ body {
 	background: linear-gradient(180deg, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
 }
 
+.online-woman {
+	margin-top: 3em;
+	position: relative;
+	z-index: 2;
+}
+
+.shadow {
+	position: relative;
+	bottom: 75px;
+	z-index: 1;
+}
+
 main {
 	background-color: var(--clr-white);
-	width: 50%;
+	width: 340px;
+	position: relative;
+	bottom: 184px;
+	z-index: 0;
+	border-radius: 22px;
+	padding: 12em 2em 4em;
 }
