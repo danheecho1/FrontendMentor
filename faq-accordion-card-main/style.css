@@ -50,5 +50,35 @@ main {
 	bottom: 184px;
 	z-index: 0;
 	border-radius: 22px;
-	padding: 12em 2em 4em;
+	padding: 11em 2em 4em;
+}
+
+.page-heading {
+	font-size: 2.5rem;
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.question-div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.question {
+	font-weight: var(--fw-regular);
+}
+
+.question-div img {
+	height: 7px;
+}
+
+.answer {
+	margin-top: 1.25em;
+}
+
+hr {
+	margin: 1.5em 0;
+	border: 1px solid var(--clr-light-grayish-blue);
 }
