@@ -76,9 +76,18 @@ main {
 
 .answer {
 	margin-top: 1.25em;
+	display: none;
 }
 
 hr {
 	margin: 1.5em 0;
 	border: 1px solid var(--clr-light-grayish-blue);
+}
+
+.active {
+	display: block;
+}
+
+.expanded {
+	transform: rotate(180deg);
 }
