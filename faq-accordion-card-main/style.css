@@ -38,21 +38,24 @@ body {
 	justify-content: center;
 }
 
-.online-woman {
+.online-woman-mobile {
 	position: absolute;
 	z-index: 2;
 	bottom: 30px;
 	width: 85%;
 }
 
+[class*="desktop"] {
+	display: none;
+}
+
 main {
 	background-color: var(--clr-white);
 	width: 340px;
-	/* position: relative;
-	bottom: 184px; */
 	z-index: 0;
 	border-radius: 22px;
 	padding: 0 2em 4em;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .page-heading {
@@ -106,5 +109,17 @@ hr {
 }
 
 @media screen and (min-width: 1000px) {
-	
+	main {
+		display: grid;
+		width: 920px;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.online-woman-mobile {
+		display: none;
+	}
+
+	.page-heading {
+		text-align: left;
+	}
 }
