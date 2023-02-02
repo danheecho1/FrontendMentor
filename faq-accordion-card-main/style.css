@@ -45,7 +45,9 @@ body {
 	width: 85%;
 }
 
-[class*="desktop"] {
+.online-woman-desktop, 
+.box-desktop, 
+.pattern-desktop {
 	display: none;
 }
 
@@ -114,12 +116,22 @@ hr {
 		width: 920px;
 		grid-template-columns: 1fr 1fr;
 	}
-
 	.online-woman-mobile {
 		display: none;
 	}
-
-	.page-heading {
-		text-align: left;
-	}
 }
+
+/* 
+Note 02/02/23
+Noticed that having the image div outside of the section element 
+(white FAQ card) will not work on desktop view because of the shadow
+image. On mobile view, the online woman image has the highest z-index, 
+and covers both the card and background; it doesn't matter if the 
+shadow image goes over the card and shows on the background. In desktop
+view, the shadow image is supposed to show only within the card; 
+the portion that reaches over to the background on the left side is not
+supposed to be seen. 
+
+Solution: the image div will have to be inside the card (section 
+element). 
+*/
