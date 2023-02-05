@@ -32,7 +32,7 @@ body {
 	padding-top: 15em;
 }
 
-.main-img-div {
+.img-div {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -112,13 +112,49 @@ hr {
 
 @media screen and (min-width: 1000px) {
 	main {
-		display: grid;
 		width: 920px;
+		display: grid;
 		grid-template-columns: 1fr 1fr;
+		overflow: hidden;
 	}
+
+	.shadow {
+		transform: rotate(180deg) scale(9);
+		position: absolute;
+		right: 1030px;
+		top: 120px;
+	}
+
 	.online-woman-mobile {
 		display: none;
 	}
+
+	.online-woman-desktop {
+		display: inline;
+		position: absolute;
+		top: 57px;
+		right: 70px;
+	}
+
+	.box-desktop {
+		display: inline;
+		position: absolute;
+
+	}
+
+	section article, 
+	hr {
+		margin-right: 5.5em;
+	}
+
+	.answer {
+		margin-right: 1em;
+	}
+
+	.page-heading {
+		margin-top: 1.75em;
+	};
+
 }
 
 /* 
@@ -134,4 +170,14 @@ supposed to be seen.
 
 Solution: the image div will have to be inside the card (section 
 element). 
+*/
+
+/* 
+Note 02/04/23
+Realized that the box image still overflows out of the section element 
+in the desktop view. Will need to consider moving that element out of the
+img div and add a higher z-index, but I want to try and find a way to 
+keep it within the img div since that is the logical placement within the
+HTML code. Maybe I can use multiple layers of divs with different overflow
+settings to achieve this? 
 */
