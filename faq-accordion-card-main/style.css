@@ -161,30 +161,4 @@ hr {
 	.page-heading {
 		margin-top: 1.75em;
 	};
-
 }
-
-/* 
-Note 02/02/23
-Noticed that having the image div outside of the section element 
-(white FAQ card) will not work on desktop view because of the shadow
-image. On mobile view, the online woman image has the highest z-index, 
-and covers both the card and background; it doesn't matter if the 
-shadow image goes over the card and shows on the background. In desktop
-view, the shadow image is supposed to show only within the card; 
-the portion that reaches over to the background on the left side is not
-supposed to be seen. 
-
-Solution: the image div will have to be inside the card (section 
-element). 
-*/
-
-/* 
-Note 02/04/23
-Realized that the box image still overflows out of the section element 
-in the desktop view. Will need to consider moving that element out of the
-img div and add a higher z-index, but I want to try and find a way to 
-keep it within the img div since that is the logical placement within the
-HTML code. Maybe I can use multiple layers of divs with different overflow
-settings to achieve this? 
-*/
