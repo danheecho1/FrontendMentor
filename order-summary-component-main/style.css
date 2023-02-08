@@ -14,6 +14,44 @@
 	padding: 0;
 	box-sizing: border-box;
 	font-size: 16px;
+	font-family: 'Red Hat Display', sans-serif;
+}
+
+.viewport {
+	background: url("./images/pattern-background-mobile.svg");
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+.viewport__card {
+	width: 325px;
+	margin: 4em auto;
+}
+
+.viewport__card__cover-image {
+	width: 100%;
+	border-radius: 15px 15px 0 0;
+	vertical-align: bottom;
+}
+
+.viewport__card__info-div {
+	background-color: white;
+	padding: 3em 2em;
+}
+
+.viewport__card__info-div__heading {
+	text-align: center;
+	font-weight: var(--fw-black);
+	font-size: 1.4rem;
+	margin-bottom: 1em;
+}
+
+.viewport__card__info-div__description {
+	text-align: center;
+	color: var(--clr-desaturated-blue);
+	line-height: 1.75;
+	margin-bottom: 1em;
 }
 
 .attribution {

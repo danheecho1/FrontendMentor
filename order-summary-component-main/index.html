@@ -4,27 +4,31 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
 		<title>Frontend Mentor | Order summary card</title>
 	</head>
-	<body>
-        <main>
-            <img src="./images/illustration-hero.svg" alt="">
-            <div>
-                <h1>Order Summary</h1>
-                <p>You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!</p>
-                <div>
-                    <div>
-                        <img src="./images/icon-music.svg" alt="">
-                        <div>
-                            <p>Annual Plan</p>
-                            <p>$59.99/year</p>
+	<body class="viewport">
+        <main class="viewport__card">
+            <img src="./images/illustration-hero.svg" alt="" class="viewport__card__cover-image">
+            <div class="viewport__card__info-div">
+                <h1 class="viewport__card__info-div__heading">Order Summary</h1>
+                <p class="viewport__card__info-div__description">You can now listen to millions of songs, audiobooks and podcasts on any device anywhere you like!</p>
+                <div class="viewport__card__info-div__selection-div">
+                    <div class="viewport__card__info-div__selection-div__left-div">
+                        <img src="./images/icon-music.svg" alt="" class="viewport__card__info-div__selection-div__left-div__music-icon">
+                        <div class="viewport__card__info-div__selection-div__left-div__detail-div">
+                            <p class="viewport__card__info-div__selection-div__left-div__detail-div__selection-name">Annual Plan</p>
+                            <p class="viewport__card__info-div__selection-div__left-div__detail-div__selection-price">$59.99/year</p>
                         </div>
                     </div>
-                    <a href="#">change</a>
+                    <a href="#" class="viewport__card__info-div__selection-div__change-link">change</a>
                 </div>
-                <div>
-                    <button>Proceed to Payment</button>
-                    <button>Cancel Order</button>
+                <div class="viewport__card__info-div__button-div">
+                    <button class="viewport__card__info-div__button-div__proceed">Proceed to Payment</button>
+                    <button class="viewport__card__info-div__button-div__cancel">Cancel Order</button>
                 </div>
             </div>
         </main>
@@ -33,3 +37,4 @@
 		</div>
 	</body>
 </html>
+ 
