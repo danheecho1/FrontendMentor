@@ -25,7 +25,7 @@
 }
 
 .viewport__card {
-	width: 325px;
+	width: 340px;
 	margin: 4em auto;
 }
 
@@ -38,6 +38,7 @@
 .viewport__card__info-div {
 	background-color: white;
 	padding: 3em 2em;
+	border-radius: 0 0 15px 15px;
 }
 
 .viewport__card__info-div__heading {
@@ -54,7 +55,74 @@
 	margin-bottom: 1em;
 }
 
+.viewport__card__info-div__selection-div {
+	background-color: var(--clr-very-pale-blue);
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	padding: 1.125em;
+	align-items: center;
+	margin-bottom: 1.5em;
+}
+
+.viewport__card__info-div__selection-div__left-div {
+	display: flex;
+	gap: 1.375em;
+}
+
+.viewport__card__info-div__selection-div__left-div__detail-div__selection-name {
+	font-weight: var(--fw-black);
+	font-size: 0.8rem;
+}
+
+.viewport__card__info-div__selection-div__left-div__detail-div__selection-price {
+	color: var(--clr-desaturated-blue);
+	font-size: 0.8rem;
+}
+
+.viewport__card__info-div__selection-div__change-link {
+	text-decoration: none;
+	font-size: 0.9rem;
+}
+
+.viewport__card__info-div__buttons-div {
+	display: flex;
+	flex-direction: column;
+}
+
+.viewport__card__info-div__button-div__proceed {
+	border: none;
+	width: 100%;
+	height: 3em;
+	background-color: var(--clr-bright-blue);
+	color: var(--clr-very-pale-blue); 
+	font-weight: var(--fw-bold);
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.viewport__card__info-div__button-div__cancel-container {
+	pointer-events: none;
+	text-align: center;
+	height: 3em; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.viewport__card__info-div__button-div__cancel {
+	border: none;
+	color: var(--clr-desaturated-blue);
+	background: none;
+	text-decoration: none;
+	pointer-events: auto;
+	font-weight: var(--fw-bold);
+}
+
+
+
 .attribution {
 	text-align: center;
 	margin-top: 1em;
 }
+
