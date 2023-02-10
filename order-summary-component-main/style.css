@@ -37,7 +37,7 @@
 
 .viewport__card__info-div {
 	background-color: white;
-	padding: 3em 2em;
+	padding: 2em 1.75em 1.5em;
 	border-radius: 0 0 15px 15px;
 }
 
@@ -70,6 +70,13 @@
 	gap: 1.375em;
 }
 
+.viewport__card__info-div__selection-div__left-div__detail-div {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
 .viewport__card__info-div__selection-div__left-div__detail-div__selection-name {
 	font-weight: var(--fw-black);
 	font-size: 0.8rem;
@@ -83,11 +90,13 @@
 .viewport__card__info-div__selection-div__change-link {
 	text-decoration: none;
 	font-size: 0.9rem;
+	font-weight: var(--fw-bold);
 }
 
-.viewport__card__info-div__buttons-div {
+.viewport__card__info-div__button-div {
 	display: flex;
 	flex-direction: column;
+	gap: 0.75em;
 }
 
 .viewport__card__info-div__button-div__proceed {
